@@ -1,0 +1,37 @@
+server:
+    port: 8086
+spring:
+    application:
+        name: MS-SECURITY
+    mvc:
+        dispatch-options-request : true
+
+
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        hostname: localhost
+
+
+
+email:
+    template:
+        path: D:\secura-api\secura-api\security-ms\src\main\resources\email-templates\user-registration.html
+        otp: D:\secura-api\secura-api\security-ms\src\main\resources\email-templates\user-otp.html
+
+
+    host: 'mail.royalcyber.org'
+    protocol: 'smtp'
+    auth: 'true'
+    socketFactoryPort: '995'
+    timeout: '10000'
+    checkServerIdentity: 'false'
+    trust: '*'
+    connectionTimeout: '10000'
+    debug: 'true'
+    fallback: 'false'
+    user: 'securaapi@royalcyber.org'
+    password : 'Cyber@2025!'

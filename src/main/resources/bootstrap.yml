@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+       uri: http://localhost:8888/
+       fail-fast: true
+  main:
+      allow-circular-references: true
+
+  profiles:
+    active : native
+management:
+  security:
+    enabled: 'false'
